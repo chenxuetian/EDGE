@@ -1,0 +1,109 @@
+{
+  "train": {
+    "basic": {
+      "data_dir": [
+        "../../datasets/anno/annotated/manualAnnos",
+        "../../datasets/anno/annotated/ranking",
+        "../../datasets/anno/annotated/autoAnnosLargeNew",
+        "../../datasets/anno/annotated/domain",
+        "../../datasets/anno/annotated/fineweb-edu"
+      ],
+      "elem_tasks": ["grounding", "ocr"],
+      "num_per_page": 8,
+      "max_items": 20
+    },
+    "basic_cropped": {
+      "data_dir": [
+        "../../datasets/anno/annotated/croppedManual",
+        "../../datasets/anno/annotated/croppedRanking",
+        "../../datasets/anno/annotated/autoAnnosLargeNew"
+      ],
+      "elem_tasks": ["grounding", "ocr"],
+      "num_per_page": 5,
+      "max_items": 20
+    },
+    "icon_mixed": {
+      "data_dir": "../../datasets/anno/icon_mixed",
+      "elem_tasks": ["icon_grounding", "icon_referring"],
+      "num_per_page": 5,
+      "max_items": 20
+    },
+    "icon_mixed_cropped": {
+      "data_dir": "../../datasets/anno/cropped_icon_mixed",
+      "elem_tasks": ["icon_grounding", "icon_referring"],
+      "max_items": 20
+    },
+    "som": {
+      "data_dir": "../../datasets/anno/som",
+      "elem_tasks": ["som_general", "som_icon"],
+      "max_items": 20
+    },
+    "som_cropped": {
+      "data_dir": "../../datasets/anno/cropped_som",
+      "elem_tasks": ["som_general", "som_icon"],
+      "max_items": 20
+    },
+    "icon_desc": {
+      "data_dir": [
+        "../../datasets/anno/external_icons/alibaba",
+        "../../datasets/anno/external_icons/bootstrap",
+        "../../datasets/anno/external_icons/fontAwesome"
+      ],
+      "elem_tasks": ["icon_desc"],
+      "max_items": 20
+    },
+    "accessibility": {
+      "data_dir": [
+        "../../datasets/anno/annotated/domain",
+        "../../datasets/anno/annotated/manualAnnos",
+        "../../datasets/anno/annotated/ranking",
+        "../../datasets/anno/annotated/fineweb-edu"
+      ],
+      "elem_tasks": ["general_acb", "image_alt"],
+      "max_items": 20,
+      "num_per_page": 5
+    },
+    "captioning": {
+      "data_dir": [
+        "../../datasets/anno/annotated/domain",
+        "../../datasets/anno/annotated/manualAnnos",
+        "../../datasets/anno/annotated/ranking"
+      ],
+      "elem_tasks": ["title", "description"],
+      "max_items": 20
+    },
+    "rico_tasks": {
+      "data_dir": "../../datasets/anno/rico_tasks",
+      "img_dir": "../../datasets/Rico/combined",
+      "elem_tasks": [
+        "ricosca",
+        "widget-grounding",
+        "widget-caption",
+        "screen2words"
+      ],
+      "max_items": 20
+    },
+    "advanced_tasks": {
+      "data_dir": [
+        "../../datasets/anno/ferret_ui_tasks/icon_detail_func_0901",
+        "../../datasets/anno/ferret_ui_tasks/manualAnnos3",
+        "../../datasets/anno/annotated/ranking",
+        "../../datasets/anno/annotated/domain"
+      ],
+      "elem_tasks": ["intention", "detail", "function"],
+      "max_items": 20
+    },
+    "monkey_training": {
+      "data_dir": "../../datasets/MonkeyData",
+      "img_dir": "../../datasets/MonkeyData/Monkey_Train_data",
+      "elem_tasks": ["monkey_training"],
+      "max_items": 20
+    },
+    "llava_instruct": {
+      "data_dir": "../../datasets/LLaVA-Instruct-150k",
+      "img_prefix": "../../datasets/MonkeyData/Monkey_Train_data/COCO2014/train2014/COCO_train2014_",
+      "elem_tasks": ["llava_instruct"],
+      "max_items": 20
+    }
+  }
+}
