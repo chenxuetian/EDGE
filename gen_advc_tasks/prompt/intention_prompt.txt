@@ -1,0 +1,39 @@
+Note that in the screenshot of this webpage, each GUI detection is framed with a rectangle, and its number nearby. For each framed element, you need to combine its visual features and textual annotations (indexed by its number) to better understand the element.
+Then, based on your full understanding of the page from both the provided screenshot and the information, design question and answer pairs simulating the interactions between a user and system. 
+The user, not familiar with the website GUI, asks questions related to a specific task that needs to interact with some element(s). The words and expressions may be different from something shown on the webpage. Thus, in questions, instead of repeating the key texts of certain elements, you should use synonyms, equivalent expressions or related contents in moderation to simulate the various vague and diverse natural language expressions that users may input.
+The system, proficient in operating this website GUI and fully understanding the user's intention, precisely recognizes the necessary element and briefly answers in one sentence. When referring to an element in system answers, index the annotation with the marked number in the screenshot corresponding to the target element, and append its number and bounding box as {ID: (x1, y1, x2, y2)} directly after mentioning it, eg. the YouTube icon{2: (0.3, 0.5, 0.35, 0.61)}.
+From the screenshot you're supposed to gain more information and have a deeper understanding of the page so as to generate more and better potential QA pairs. DO NOT use any information beyond the provided, especially an element that is not framed with a number or not having its line of annotation. Do not modify the provided bounding boxes. 
+You need to pay attention to different types of elements, such as links (Hrefs), buttons, images, and icons. Among them, you can prioritize focusing on visual icons that appear separately without nearby explanatory text in the screenshot. Combining their visual features, relative positions with other elements, and possible textual attributes in annotations, infer their functions and generate QA pairs.
+Make full use of the provided information and generate QA pairs for as many elements as possible, with only one QA pair for each element. But a QA pair can refer to multiple semantically similar or related elements. In principle, the number of QA pairs generated for each webpage should be about 8. If there are many candidates, keep the ones that have higher quality and you are more confident of answering correctly.
+Output a JSON array of question-answer pairs, each being a dictionary with keys "User" and "System". Remember to escape possible quotation marks, i.e. use \" in a sentence since it's enclosed in double quotation marks in JSON. Do not add something like "```json". Output a JSON object only without any other thing.
+
+An example (inaccurate, for reference only):
+<screenshot>
+<This prompt>
+Prompt ends. 
+
+Sample annotation:
+URL: https://scholar.google.com/
+Title: Google Scholar
+Description: Google Scholar provides a simple way to broadly search for scholarly literature. 
+0. { Href }, "My profile", "", [0.0364, 0.0233, 0.0564, 0.0333]
+1. { Button }, "", "Search", [0.6732, 0.2887, 0.6932, 0.3187]
+2. { Button }, "Michael", "", [0.9664, 0.0233, 0.09764, 0.0333]
+Annotation ends.
+
+Generated QA pairs:
+(------The following is your response-----)
+[
+  {
+    "User": "How can I view my Google Scholar profile page?",
+    "System": "You can click the \"My profile\" link {0: (0.0364, 0.0233, 0.0564, 0.0333)} in the top left to navigate to your profile page."
+  },
+  {
+    "User": "I want to submit a search in this website. What element should I click?",
+    "System": "To submit a search, you should click the \"Search\" button {1: (0.6732, 0.2887, 0.6932, 0.3187)} in the middle right of the screen."
+  },
+  {
+    "User": "Is there a way to log out of my Google account?",
+    "System": "Yes. In the top right corner there is a button of your profile picture {2: (0.9664, 0.0233, 0.09764, 0.0333)}. Clicking it may bring up an option to log out of your Google account."
+  }
+]

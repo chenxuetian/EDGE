@@ -1,0 +1,4 @@
+Using the provided screenshot and textual annotations, give a one-sentence description of the purpose of the screen. 
+Particularly, what is the function of this page when a user interacts with the webpage.
+Begin the description directly without saying any other thing.
+Answer in a human tone, as if one were describing the functionality of the page to another person.

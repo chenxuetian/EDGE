@@ -1,0 +1,349 @@
+{
+  "url": "https://www.google.de/",
+  "title": "Google",
+  "description": "",
+  "keywords": "",
+  "image": "0000051.png",
+  "viewport": [
+    1280,
+    800
+  ],
+  "elements": [
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "About",
+      "bbox": [
+        21,
+        17,
+        68,
+        43
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Store",
+      "bbox": [
+        78,
+        17,
+        121,
+        43
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Gmail",
+      "bbox": [
+        1008,
+        18,
+        1042,
+        42
+      ],
+      "ariaLabel": "Gmail ",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Images",
+      "bbox": [
+        1057,
+        18,
+        1100,
+        42
+      ],
+      "ariaLabel": "Search for Images ",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Button"
+      ],
+      "text": "",
+      "bbox": [
+        1115,
+        10,
+        1155,
+        50
+      ],
+      "ariaLabel": "Google apps",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Sign in",
+      "bbox": [
+        1169,
+        10,
+        1254,
+        50
+      ],
+      "ariaLabel": "Sign in",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "Google",
+      "bbox": [
+        504,
+        208,
+        776,
+        300
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "svg",
+      "types": [
+        "Icon"
+      ],
+      "text": "",
+      "bbox": [
+        363,
+        340,
+        383,
+        360
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "TEXTAREA",
+      "types": [
+        "ComboBox"
+      ],
+      "text": "",
+      "bbox": [
+        396,
+        327,
+        839,
+        373
+      ],
+      "ariaLabel": "Search",
+      "title": "Search",
+      "children": []
+    },
+    {
+      "tagName": "DIV",
+      "types": [
+        "Button"
+      ],
+      "text": "",
+      "bbox": [
+        843,
+        327,
+        883,
+        371
+      ],
+      "ariaLabel": "Search by voice",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "DIV",
+      "types": [
+        "Button"
+      ],
+      "text": "",
+      "bbox": [
+        883,
+        327,
+        923,
+        371
+      ],
+      "ariaLabel": "Search by image",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "INPUT",
+      "types": [
+        "Button"
+      ],
+      "text": "Google Search",
+      "bbox": [
+        499,
+        403,
+        627,
+        439
+      ],
+      "ariaLabel": "Google Search",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "INPUT",
+      "types": [
+        "Button"
+      ],
+      "text": "I'm Feeling Lucky",
+      "bbox": [
+        638,
+        403,
+        781,
+        439
+      ],
+      "ariaLabel": "I'm Feeling Lucky",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "DIV",
+      "types": [
+        "Text"
+      ],
+      "text": "Google offered in: Deutsch",
+      "bbox": [
+        560,
+        460,
+        720,
+        488
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Advertising",
+      "bbox": [
+        20,
+        753,
+        119,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Business",
+      "bbox": [
+        119,
+        753,
+        206,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "How Search works",
+      "bbox": [
+        206,
+        753,
+        353,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Our third decade of climate action: join us",
+      "bbox": [
+        487,
+        753,
+        793,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Privacy",
+      "bbox": [
+        1035,
+        753,
+        1111,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Terms",
+      "bbox": [
+        1111,
+        753,
+        1179,
+        800
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "DIV",
+      "types": [
+        "Button"
+      ],
+      "text": "Settings",
+      "bbox": [
+        1179,
+        753,
+        1260,
+        799
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+You will receive a webpage screenshot and textual annotation detecting the GUI components in this screenshot. 
+The the first three lines of the textual annotation are the URL, title and description of the webpage, respectively, and the GUI components detections are listed below.
+Each GUI detections are separated with a newline. Each line is represented by types, text, supplementary information and bounding box separated by comma, describing a specific HTML element visible in this webpage screenshot.  
+The types, separated by whitespace, are enclosed in curly braces, and the text is enclosed in double quotes.
+Supplementary information corresponds to the title or aria-label attribute of an HTML element.
+Bounding box coordinates are represented as [x1, y1, x2, y2] with floating numbers ranging from 0 to 1. These values correspond to the top left x, top left y, bottom right x, and bottom right y.
+The detection might not contain text or supplementary information, so the corresponding fields might be empty.
