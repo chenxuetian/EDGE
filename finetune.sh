@@ -1,6 +1,6 @@
 #!/bin/bash
 export CUDA_DEVICE_MAX_CONNECTIONS=1
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=6,7
 
 
 GPUS_PER_NODE=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
@@ -16,7 +16,7 @@ NEPOCHS=1
 
 
 OUTPUT="output_models/${OUTPUT}"
-CONFIG="training_configs/${CONFIG}"
+CONFIG="edge_dataset/configs/${CONFIG}"
 LOG="${OUTPUT}/training.log"
 mkdir -p "$OUTPUT"
 

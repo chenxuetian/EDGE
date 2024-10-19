@@ -2,10 +2,8 @@
   "train": {
     "basic": {
       "data_dir": [
-        "../../datasets/anno/annotated/manualAnnos",
         "../../datasets/anno/annotated/ranking",
         "../../datasets/anno/annotated/autoAnnosLargeNew",
-        "../../datasets/anno/annotated/domain",
         "../../datasets/anno/annotated/fineweb-edu"
       ],
       "elem_tasks": ["grounding", "ocr"],
@@ -54,8 +52,6 @@
     },
     "accessibility": {
       "data_dir": [
-        "../../datasets/anno/annotated/domain",
-        "../../datasets/anno/annotated/manualAnnos",
         "../../datasets/anno/annotated/ranking",
         "../../datasets/anno/annotated/fineweb-edu"
       ],
@@ -64,11 +60,7 @@
       "num_per_page": 5
     },
     "captioning": {
-      "data_dir": [
-        "../../datasets/anno/annotated/domain",
-        "../../datasets/anno/annotated/manualAnnos",
-        "../../datasets/anno/annotated/ranking"
-      ],
+      "data_dir": ["../../datasets/anno/annotated/ranking"],
       "elem_tasks": ["title", "description"],
       "max_items": 20
     },
@@ -84,12 +76,7 @@
       "max_items": 20
     },
     "advanced_tasks": {
-      "data_dir": [
-        "../../datasets/anno/ferret_ui_tasks/icon_detail_func_0901",
-        "../../datasets/anno/ferret_ui_tasks/manualAnnos3",
-        "../../datasets/anno/annotated/ranking",
-        "../../datasets/anno/annotated/domain"
-      ],
+      "data_dir": ["../../datasets/anno/annotated/ranking"],
       "elem_tasks": ["intention", "detail", "function"],
       "max_items": 20
     },
