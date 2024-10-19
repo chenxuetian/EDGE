@@ -6,8 +6,7 @@ We have also published our [model](https://huggingface.co/EDGEwww25/EDGE-Model) 
 ## Examples
 *EDGE* can answer user questions about GUI interactions in natural language, or directly specify bounding boxes or point coordinates. It is recommended to specify the grounding form in the query.
 
-<img src=example_images/answered/iphone.png width=200>
-<img src=example_images/answered/appstore.png width=195>
+<img src=example_images/answered/iphone.png width=250> <img src=example_images/answered/appstore.png align="right" width=244>
 
 (left) \
 **Q:** Where is the icon of Safari? (with bbox (x1, y1, x2, y2)) \
