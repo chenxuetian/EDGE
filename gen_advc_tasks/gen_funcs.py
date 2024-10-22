@@ -1,6 +1,6 @@
 import os
 import json
-from typing import Literal
+from typing import Literal, Set
 from utils.anno_proc import raw_anno_2_text
 from utils.call_api import call_vision_api
 from utils.select_anno import select_samples
@@ -23,10 +23,6 @@ with open('prompt/detail_prompt.txt', 'r') as f:
 
 
 def gen_intention(model, page_dir, sample_name):
-    if os.path.exists(os.path.join(page_dir, "intention", f"{sample_name}.json")) or \
-        os.path.exists(os.path.join(page_dir, "intention", f"{sample_name}.txt")):
-        return {"prompt": 0, "completion": 0}
-    
     anno_path = os.path.join(page_dir, "anno", f"{sample_name}.json")
     img_path = os.path.join(page_dir, "som", f"{sample_name}.png")
     with open(anno_path, 'r', encoding='utf-8') as f:
@@ -52,10 +48,12 @@ def gen_intention(model, page_dir, sample_name):
             f.write(response_content)
     # return token_usage
 
-def gen_intention_all(model, page_dir, *, max_id=9999, page_part: Literal['top', 'mid', 'btm']):
-    sample_names = select_samples(page_dir, page_part=page_part, max_id=max_id)
+def gen_intention_all(model, page_dir, page_part: Set[Literal['top', 'mid', 'btm']], max_id=1000000, cover_exist=False):
+    sample_names = select_samples(
+        page_dir, page_part=page_part, max_id=max_id, cover_exist=cover_exist, task_name='intention'
+    )
 
-    os.makedirs(os.path.join(page_dir, "intention"), exist_ok=True)
+    os.makedirs(os.path.join(page_dir, 'intention'), exist_ok=True)
     token_usages = multi_threads_gen(
         model, page_dir, target_func=gen_intention, sample_names=sample_names, 
     )
@@ -63,9 +61,6 @@ def gen_intention_all(model, page_dir, *, max_id=9999, page_part: Literal['top',
 
 
 def gen_detail(model, page_dir, sample_name):
-    if os.path.exists(os.path.join(page_dir, "detail", f"{sample_name}.txt")):
-        return {"prompt": 0, "completion": 0}
-    
     anno_path = os.path.join(page_dir, "anno", f"{sample_name}.json")
     img_path = os.path.join(page_dir, "raw", f"{sample_name}.png")
     with open(anno_path, 'r', encoding='utf-8') as f:
@@ -85,8 +80,10 @@ def gen_detail(model, page_dir, sample_name):
         f.write(response_content)
     # return token_usage
 
-def gen_detail_all(model, page_dir, *, max_id=100000, page_part: Literal['top', 'mid', 'btm']):
-    sample_names = select_samples(page_dir, page_part=page_part, max_id=max_id)
+def gen_detail_all(model, page_dir, page_part: Set[Literal['top', 'mid', 'btm']], max_id=1000000, cover_exist=False):
+    sample_names = select_samples(
+        page_dir, page_part=page_part, max_id=max_id, cover_exist=cover_exist, task_name='detail'
+    )
 
     os.makedirs(os.path.join(page_dir, 'detail'), exist_ok=True)
     token_usages = multi_threads_gen(
@@ -96,9 +93,6 @@ def gen_detail_all(model, page_dir, *, max_id=100000, page_part: Literal['top', 
 
 
 def gen_function(model, page_dir, sample_name):
-    if os.path.exists(os.path.join(page_dir, "function", f"{sample_name}.txt")):
-        return {"prompt": 0, "completion": 0}
-    
     anno_path = os.path.join(page_dir, "anno", f"{sample_name}.json")
     img_path = os.path.join(page_dir, "raw", f"{sample_name}.png")
     with open(anno_path, 'r', encoding='utf-8') as f:
@@ -118,8 +112,10 @@ def gen_function(model, page_dir, sample_name):
         f.write(response_content)
     # return token_usage
 
-def gen_function_all(model, page_dir, *, max_id=1000000, page_part: Literal['top', 'mid', 'btm']):
-    sample_names = select_samples(page_dir, page_part=page_part, max_id=max_id)
+def gen_function_all(model, page_dir, page_part: Set[Literal['top', 'mid', 'btm']], max_id=1000000, cover_exist=False):
+    sample_names = select_samples(
+        page_dir, page_part=page_part, max_id=max_id, cover_exist=cover_exist, task_name='function'
+    )
     
     os.makedirs(os.path.join(page_dir, "function"), exist_ok=True)
     token_usages = multi_threads_gen(

@@ -1,6 +1,7 @@
 import os
 import json
-from typing import Literal, Optional
+from typing import Literal, Set
+
 
 def box_is_valid(bbox, size=[1, 1]):
     assert isinstance(bbox, list)
@@ -25,22 +26,35 @@ def is_valid(page_anno: dict):
             return False
     return True
 
-def select_samples(page_dir, *, page_part: Literal['top', 'mid', 'btm'], max_id=100000):
-    """Select samples from the given page directory based on the page part (`page_part`) and the maximum ID (`max_id`)."""
 
-    print(f'Selecting samples in `{page_dir}`...')
+def select_samples(
+    page_dir,
+    *, page_part: Set[Literal['top', 'mid', 'btm']], max_id=1000000,
+    cover_exist=False, task_name: Literal['function', 'detail', 'intention']
+):
+    """Select samples from the given page directory based on the given page parts (`page_part`), the maximum ID (`max_id`),
+    and whether to cover the existing corresponding result file(s) (`cover_exist`).
+    """
+
+    print(f'Selecting samples in `{page_dir}` for task "{task_name}"... (page_part={page_part}, cover_exist={cover_exist}, max_id={max_id})')
 
     anno_names = []
-    dismiss_parts = ['_top', '_mid', '_btm']
-    dismiss_parts.remove(f'_{page_part}')
+    dismiss_parts = {'top', 'mid', 'btm'} - page_part
+    
     for filename in os.listdir(os.path.join(page_dir, "anno")):
         if not filename.endswith(".json"):
             continue
         anno_name = filename[:-5]
+        if not cover_exist:
+            if os.path.exists(os.path.join(page_dir, task_name, f"{anno_name}.json")) or os.path.exists(os.path.join(page_dir, task_name, f"{anno_name}.txt")):
+                continue
+
         number = int(anno_name.split("_")[0] if "_" in anno_name else anno_name.split(".")[0])
         if number > max_id:
             continue
-        if anno_name[-4:] in dismiss_parts:
+        if len(anno_name) >= 4 and anno_name[-4] == '_' and anno_name[-3:] in dismiss_parts:
+            continue
+        if 'top' in dismiss_parts and '_' not in anno_name:
             continue
         if not os.path.exists(os.path.join(page_dir, "som", f"{anno_name}.png")):
             continue
@@ -65,9 +79,10 @@ def select_samples(page_dir, *, page_part: Literal['top', 'mid', 'btm'], max_id=
 
 if __name__ == '__main__':
     import os
+
     if os.getcwd().endswith('/utils'):
         os.chdir('..')
     if 'test_webpage' not in os.listdir():
         exit('To test this script, prepare a directory named "test_webpage" with annotated pages in it.')
 
-    print(select_samples('test_webpage', page_part='top'))
+    print(select_samples('test_webpage', page_part={'mid', 'btm'}, task_name='function', cover_exist=False))

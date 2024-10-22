@@ -1,4 +1,6 @@
+anthropic
+# openai
+
 python-dotenv
-openai
 tqdm
 pillow

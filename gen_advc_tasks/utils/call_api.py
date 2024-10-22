@@ -1,5 +1,6 @@
 import base64
-import openai
+# import openai
+import anthropic
 from dotenv import load_dotenv
 
 
@@ -9,12 +10,16 @@ load_dotenv(override=True)
 # api_key = <API KEY>
 
 # If your request need to be forwarded to a specific server, uncomment the following line and replace <BASE URL> with the URL
-base_url = "http://10.176.40.145:8502"
+# base_url = <BASE URL>
 
-client = openai.OpenAI(
-    # api_key=api_key
-    base_url=base_url,
+client_anthropic = anthropic.Anthropic(
+    # api_key=api_key,
+    # base_url=base_url,
 )
+# client_openai = openai.OpenAI(
+#     # api_key=api_key
+#     # base_url=base_url,
+# )
 
 
 def base64_encode_image(img_path: str):
@@ -25,9 +30,41 @@ def base64_encode_image(img_path: str):
 def call_vision_api(
     model, system_prompt, user_prompt, img_path, *, temperature=0.7
 ) -> str:
-    # assert model in ['gpt-4o', 'claude-3-5-sonnet-20240620'], 'Model should be one of ["gpt-4o", "claude-3-5-sonnet-20240620"]!'
-    
     base64_image = base64_encode_image(img_path)
+
+    # Anthropic format API
+    messages = [
+        {
+            "role": "system",
+            "content": system_prompt
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": "image/png",
+                        "data": f"{base64_image}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": user_prompt
+                }
+            ]
+        }
+    ]
+    response = client_anthropic.messages.create(
+        model=model,
+        messages=messages,
+        max_tokens=2000,
+        temperature=temperature,
+    )
+    return response.content[0].text
+
+    # OpenAI format API
     messages = [
         {
             "role": "system",
@@ -47,14 +84,14 @@ def call_vision_api(
             ]
         }
     ]
-
-    response = client.chat.completions.create(
+    response = client_openai.chat.completions.create(
         model=model,
         temperature=temperature,
         messages=messages,
     )
-    
-    # response_content = response.choices[0].message.content
+    response_content = response.choices[0].message.content
+    return response_content
+
     # token_usage = {"prompt": response.usage.prompt_tokens, "completion": response.usage.completion_tokens}
     # return response_content, token_usage
 

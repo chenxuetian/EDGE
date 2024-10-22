@@ -19,20 +19,35 @@ if __name__ == '__main__':
     parser.add_argument(
         '--page-part',
         type=str,
-        choices=['top', 'mid', 'btm'],
+        # choices=['top', 'mid', 'btm', 'top,btm', 'top,mid', 'mid,btm', 'top,mid,btm'],
         # required=True,
         default='top',
-        help='Specify which part of the webpages to use. The default is `top`.'
+        help='Specify which part(s), separated by comma (","),  of the webpages to use. E.g, `--page-part top,mid,btm`. The default is `top`.'
+    )
+    parser.add_argument(
+        '--cover-exist',
+        action='store_true',
+        help='Whether to cover the existing corresponding result files(s).'
+    )
+    parser.add_argument(
+        '--max-id',
+        type=int,
+        default=1000000,
+        help='Specify the max indices of the annotated webpages to use.'
     )
 
     args = parser.parse_args()
+    task_type, webpage_dir, page_part_0, max_id, cover_exist = args.task_type, args.webpage_dir, args.page_part, args.max_id, args.cover_exist
+    page_part: set = set(map(lambda x: x.strip(), page_part_0.split(',')))
+    page_part.discard('')
+    if not page_part.issubset({'top', 'mid', 'btm'}):
+        exit('Any of `--page-part` should be one of "top", "mid" and "btm" (without quotation marks).')
     
-    task_type, webpage_dir, page_part = args.task_type, args.webpage_dir, args.page_part
     model = 'claude-3-5-sonnet-20240620'
 
     if task_type == 'func_infer':
-        gen_function_all(model, webpage_dir, page_part=page_part)
+        gen_function_all(model, webpage_dir, page_part, max_id, cover_exist)
     elif task_type == 'detail_desc':
-        gen_detail_all(model, webpage_dir, page_part=page_part)
+        gen_detail_all(model, webpage_dir, page_part, max_id, cover_exist)
     elif task_type == 'convers_intent':
-        gen_intention_all(model, webpage_dir, page_part=page_part) 
+        gen_intention_all(model, webpage_dir, page_part, max_id, cover_exist) 

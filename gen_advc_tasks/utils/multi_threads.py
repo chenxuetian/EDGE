@@ -3,6 +3,11 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 
 def multi_threads_gen(model, page_dir, *, target_func, sample_names, concurrency=None):
+    if not sample_names:
+        print('Nothing to to.')
+        exit(0)
+
+    print(f'Model: {model}')
     if not concurrency:
         concurrency = min(len(sample_names), min(32, os.cpu_count()))
     print(f'Concurrency: {concurrency}')

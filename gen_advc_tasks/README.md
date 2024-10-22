@@ -1,6 +1,6 @@
 # Advanced Task Generation
 
-## Directories and Files
+<img src="./assets/tasks_advc_framed.png" alt="tasks_advc_framed.png" style="zoom:35%;" />
 
 ## Usage
 
@@ -8,23 +8,21 @@
 
 - example
   ```bash
-  python main.py --webpage-dir test_webpage --task-type convers_intent --page-part btm
+  python main.py --task-type convers_intent --webpage-dir test_webpage --page-part top,mid --cover-exist
   ```
 - check usage
 
   ```bash
   python main.py -h
   ```
-
-  > usage: main.py [-h] --task-type {func_infer,detail_desc,convers_intent} --webpage-dir WEBPAGE_DIR [--page-part {top,mid,btm}]
-  >
-  > optional arguments:
-  > -h, --help show this help message and exit
-  > --task-type {func_infer,detail_desc,convers_intent}
-  > Specify which one of the three advanced tasks: Function inference, Detailed description, Conversation intention.
-  > --webpage-dir WEBPAGE_DIR
-  > The directory of the webpags to generate the advanced task data.
-  > --page-part {top,mid,btm}
-  > Specify which part of the webpages to use. The default is `top`.
-
-### API Key Setting
+  ```
+  -h, --help            show this help message and exit
+  --task-type {func_infer,detail_desc,convers_intent}
+                        Specify which one of the three advanced tasks: Function inference, Detailed description, Conversation intention.
+  --webpage-dir WEBPAGE_DIR
+                        The directory of the webpages to generate the advanced task data.
+  --page-part PAGE_PART
+                        Specify which part(s), separated by comma (","), of the webpages to use. E.g, `--page-part top,mid,btm`. The default is `top`.
+  --cover-exist         Whether to cover the existing corresponding result files(s).
+  --max-id MAX_ID       Specify the max indices of the annotated webpages to use.
+  ```
