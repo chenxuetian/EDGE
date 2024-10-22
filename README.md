@@ -24,7 +24,7 @@ We have also published our [model](https://huggingface.co/EDGEwww25/EDGE-Model) 
 - `edge_dataset/`: the dataset creation scripts, as well as a config file for dataset generating and a provided jsonl file containing a tiny portion of the training QAs as an example dataset
 - `example_images/`: examples of GUI images used for inference
 - `gen_advc_tasks/`: scripts for synthesizing advanced tasks using Claude-3.5
-- `monkey_model/`: model code; please download the model parameters from [the model repository](https://huggingface.co/EDGEwww25/EDGE-Model)to try the inference of *EDGE*.
+- `monkey_model/`: model code; please download the model parameters from [the model repository](https://huggingface.co/EDGEwww25/EDGE-Model) to try the inference of *EDGE*.
 - `utils/`: utilities for dataset, training and inference
 - `.gitignore`
 - `finetune.sh`: the fine-tuning script used during *EDGE* training
@@ -39,9 +39,9 @@ We have also published our [model](https://huggingface.co/EDGEwww25/EDGE-Model) 
 ## Training
 Due to the large number of images, the images in the training set have not been released yet. We will improve it as soon as possible.
 
-1. **Annotate Webpages:** See the instructions in the directory [annotate_webpages](annotate_webpages) to prepare webpages and generate annotations for elementary tasks.
+1. **Annotate Webpages:** See the instructions in the directory [annotate_webpages](annotate_webpages/README.md) to prepare webpages and generate annotations for elementary tasks.
 
-2. **Synthesize Advanced Tasks**: See the instructions in the directory [gen_advc_tasks] to synthesize data for advanced tasks.
+2. **Synthesize Advanced Tasks**: See the instructions in the directory [gen_advc_tasks](gen_advc_tasks/README.md) to synthesize data for advanced tasks.
 
 3. **Prepare Other Images**: Collect images like the external icons, llava-instruct-150k, monkey traning data, and various augmentation data. We will add the code and detailed description of this part as soon as possible.
 
