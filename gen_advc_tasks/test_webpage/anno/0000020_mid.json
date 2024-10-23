@@ -1,0 +1,125 @@
+{
+  "url": "https://github.com/",
+  "title": "GitHub: Let’s build from here · GitHub",
+  "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "keywords": "",
+  "image": "0000020_mid.png",
+  "viewport": [
+    1366,
+    768
+  ],
+  "elements": [
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "Code scanning is our code analysis tool that helps you remediate issues in your code.",
+      "bbox": [
+        101,
+        86,
+        542,
+        173
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Download the latest SAST ebook",
+      "bbox": [
+        101,
+        357,
+        444,
+        393
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "",
+      "bbox": [
+        676,
+        18,
+        1315,
+        457
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "Dependabot makes it easy to find and fix vulnerable dependencies in your supply chain.",
+      "bbox": [
+        101,
+        559,
+        501,
+        646
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Explore Dependabot",
+      "bbox": [
+        101,
+        675,
+        325,
+        711
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "Secret scanning automatically looks for partner patterns and prevents fraudulent use of accidentally committed secrets.",
+      "bbox": [
+        757,
+        559,
+        1177,
+        678
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Read about secret scanning",
+      "bbox": [
+        757,
+        707,
+        1054,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    }
+  ]
+}

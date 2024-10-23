@@ -1,0 +1,445 @@
+{
+  "url": "https://github.com/",
+  "title": "GitHub: Let’s build from here · GitHub",
+  "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "keywords": "",
+  "image": "0000020_top.png",
+  "viewport": [
+    1366,
+    768
+  ],
+  "elements": [
+    {
+      "tagName": "SPAN",
+      "types": [
+        "Text"
+      ],
+      "text": "Unlock your flow state with a better developer experience.",
+      "bbox": [
+        311,
+        13,
+        696,
+        29
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Grab tickets now to GitHub Universe on Oct. 29-30.",
+      "bbox": [
+        699,
+        13,
+        1040,
+        29
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "",
+      "bbox": [
+        1287,
+        12,
+        1303,
+        28
+      ],
+      "ariaLabel": "Close",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "",
+      "bbox": [
+        32,
+        60,
+        64,
+        95
+      ],
+      "ariaLabel": "Homepage",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Product",
+      "bbox": [
+        80,
+        58,
+        173,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Solutions",
+      "bbox": [
+        173,
+        58,
+        277,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Resources",
+      "bbox": [
+        277,
+        58,
+        389,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Open Source",
+      "bbox": [
+        389,
+        58,
+        519,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Enterprise",
+      "bbox": [
+        519,
+        58,
+        629,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Pricing",
+      "bbox": [
+        629,
+        58,
+        695,
+        98
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Search or jump to...",
+      "bbox": [
+        834,
+        63,
+        1152,
+        93
+      ],
+      "ariaLabel": "Search or jump to…",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Sign in",
+      "bbox": [
+        1165,
+        62,
+        1232,
+        94
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Sign up",
+      "bbox": [
+        1244,
+        62,
+        1319,
+        94
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "",
+      "bbox": [
+        893,
+        42,
+        1366,
+        768
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H1",
+      "types": [
+        "Text"
+      ],
+      "text": "Let’s build from here",
+      "bbox": [
+        142,
+        259,
+        1044,
+        352
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "The world’s leading AI-powered developer platform.",
+      "bbox": [
+        142,
+        372,
+        726,
+        395
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LABEL",
+      "types": [
+        "Text"
+      ],
+      "text": "Email address",
+      "bbox": [
+        142,
+        499,
+        239,
+        512
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "INPUT",
+      "types": [
+        "InputBox"
+      ],
+      "text": "you@company.com",
+      "bbox": [
+        142,
+        524,
+        438,
+        572
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Sign up for GitHub",
+      "bbox": [
+        438,
+        524,
+        631,
+        572
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Start a free enterprise trial",
+      "bbox": [
+        664,
+        524,
+        940,
+        573
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "Trusted by the world’s leading organizations ↘︎",
+      "bbox": [
+        142,
+        673,
+        578,
+        692
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "3M logo",
+      "bbox": [
+        142,
+        723,
+        203,
+        768
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "KPMG logo",
+      "bbox": [
+        288,
+        727,
+        386,
+        767
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "Mercedes-Benz logo",
+      "bbox": [
+        470,
+        725,
+        640,
+        768
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "SAP logo",
+      "bbox": [
+        724,
+        725,
+        812,
+        768
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "P&G logo",
+      "bbox": [
+        897,
+        731,
+        970,
+        763
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "IMG",
+      "types": [
+        "Image"
+      ],
+      "text": "Telus logo",
+      "bbox": [
+        1055,
+        731,
+        1218,
+        763
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    }
+  ]
+}

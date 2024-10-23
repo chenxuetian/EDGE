@@ -1,0 +1,925 @@
+{
+  "url": "https://github.com/",
+  "title": "GitHub: Let’s build from here · GitHub",
+  "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "keywords": "",
+  "image": "0000020_btm.png",
+  "viewport": [
+    1366,
+    768
+  ],
+  "elements": [
+    {
+      "tagName": "CANVAS",
+      "types": [
+        "Image"
+      ],
+      "text": "",
+      "bbox": [
+        226,
+        0,
+        1126,
+        111
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LI",
+      "types": [
+        "Text"
+      ],
+      "text": "1 This 7X times factor is based on data from the industry’s longest running analysis of fix rates Veracode State of Software Security 2023, which cites the average time to fix 50% of flaws as 198 days vs. GitHub’s fix rates of 72% of flaws with in 28 days which is at a minimum of 7X faster when compared.",
+      "bbox": [
+        52,
+        44,
+        983,
+        102
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LI",
+      "types": [
+        "Text"
+      ],
+      "text": "2 The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security, a commissioned study conducted by Forrester Consulting, 2022. Results are for a composite organization based on interviewed customers.",
+      "bbox": [
+        52,
+        123,
+        915,
+        160
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LI",
+      "types": [
+        "Text"
+      ],
+      "text": "3 There are now 100 million developers around the world using GitHub. Read the blog post.",
+      "bbox": [
+        52,
+        181,
+        647,
+        197
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "",
+      "bbox": [
+        52,
+        289,
+        137,
+        319
+      ],
+      "ariaLabel": "Go to GitHub homepage",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H3",
+      "types": [
+        "Text"
+      ],
+      "text": "Subscribe to our developer newsletter",
+      "bbox": [
+        52,
+        351,
+        309,
+        367
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "P",
+      "types": [
+        "Text"
+      ],
+      "text": "Get tips, technical guides, and best practices. Twice a month. Right in your inbox.",
+      "bbox": [
+        52,
+        372,
+        449,
+        409
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Subscribe",
+      "bbox": [
+        52,
+        428,
+        178,
+        476
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H3",
+      "types": [
+        "Text"
+      ],
+      "text": "Product",
+      "bbox": [
+        492,
+        291,
+        551,
+        308
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Features",
+      "bbox": [
+        492,
+        327,
+        548,
+        343
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Enterprise",
+      "bbox": [
+        492,
+        360,
+        558,
+        377
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Copilot",
+      "bbox": [
+        492,
+        394,
+        538,
+        410
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Security",
+      "bbox": [
+        492,
+        427,
+        545,
+        444
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Pricing",
+      "bbox": [
+        492,
+        461,
+        536,
+        477
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Team",
+      "bbox": [
+        492,
+        494,
+        526,
+        511
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Resources",
+      "bbox": [
+        492,
+        528,
+        559,
+        544
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Roadmap",
+      "bbox": [
+        492,
+        561,
+        552,
+        578
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Compare GitHub",
+      "bbox": [
+        492,
+        595,
+        599,
+        611
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H3",
+      "types": [
+        "Text"
+      ],
+      "text": "Platform",
+      "bbox": [
+        700,
+        291,
+        767,
+        308
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Developer API",
+      "bbox": [
+        700,
+        327,
+        791,
+        343
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Partners",
+      "bbox": [
+        700,
+        360,
+        754,
+        377
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Education",
+      "bbox": [
+        700,
+        394,
+        764,
+        410
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub CLI",
+      "bbox": [
+        700,
+        427,
+        770,
+        444
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub Desktop",
+      "bbox": [
+        700,
+        461,
+        802,
+        477
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub Mobile",
+      "bbox": [
+        700,
+        494,
+        792,
+        511
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H3",
+      "types": [
+        "Text"
+      ],
+      "text": "Support",
+      "bbox": [
+        908,
+        291,
+        967,
+        308
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Docs",
+      "bbox": [
+        908,
+        327,
+        941,
+        343
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Community Forum",
+      "bbox": [
+        908,
+        360,
+        1026,
+        377
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Professional Services",
+      "bbox": [
+        908,
+        394,
+        1046,
+        410
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Premium Support",
+      "bbox": [
+        908,
+        427,
+        1020,
+        444
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Skills",
+      "bbox": [
+        908,
+        461,
+        941,
+        477
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Status",
+      "bbox": [
+        908,
+        494,
+        949,
+        511
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Contact GitHub",
+      "bbox": [
+        908,
+        528,
+        1008,
+        544
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "H3",
+      "types": [
+        "Text"
+      ],
+      "text": "Company",
+      "bbox": [
+        1116,
+        291,
+        1175,
+        308
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "About",
+      "bbox": [
+        1116,
+        327,
+        1154,
+        343
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Customer stories",
+      "bbox": [
+        1116,
+        360,
+        1226,
+        377
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Blog",
+      "bbox": [
+        1116,
+        394,
+        1144,
+        410
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "The ReadME Project",
+      "bbox": [
+        1116,
+        427,
+        1246,
+        444
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Careers",
+      "bbox": [
+        1116,
+        461,
+        1166,
+        477
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Newsroom",
+      "bbox": [
+        1116,
+        494,
+        1185,
+        511
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Inclusion",
+      "bbox": [
+        1116,
+        528,
+        1173,
+        544
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Social Impact",
+      "bbox": [
+        1116,
+        561,
+        1202,
+        578
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Shop",
+      "bbox": [
+        1116,
+        595,
+        1149,
+        611
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LI",
+      "types": [
+        "Text"
+      ],
+      "text": "© 2024 GitHub, Inc.",
+      "bbox": [
+        52,
+        727,
+        165,
+        741
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Terms",
+      "bbox": [
+        181,
+        727,
+        216,
+        741
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "LI",
+      "types": [
+        "Text"
+      ],
+      "text": "Privacy (Updated 08/2022)",
+      "bbox": [
+        232,
+        727,
+        386,
+        741
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "Sitemap",
+      "bbox": [
+        402,
+        727,
+        448,
+        741
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "What is Git?",
+      "bbox": [
+        464,
+        727,
+        532,
+        741
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Manage cookies",
+      "bbox": [
+        548,
+        725,
+        640,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "BUTTON",
+      "types": [
+        "Button"
+      ],
+      "text": "Do not share my personal information",
+      "bbox": [
+        656,
+        725,
+        868,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on X",
+      "bbox": [
+        1072,
+        726,
+        1088,
+        742
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on Facebook",
+      "bbox": [
+        1104,
+        725,
+        1122,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on LinkedIn",
+      "bbox": [
+        1138,
+        725,
+        1157,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on YouTube",
+      "bbox": [
+        1173,
+        726,
+        1196,
+        742
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on Twitch",
+      "bbox": [
+        1212,
+        725,
+        1230,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub on TikTok",
+      "bbox": [
+        1246,
+        725,
+        1264,
+        743
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    },
+    {
+      "tagName": "A",
+      "types": [
+        "Href"
+      ],
+      "text": "GitHub’s organization on GitHub",
+      "bbox": [
+        1280,
+        724,
+        1300,
+        744
+      ],
+      "ariaLabel": "",
+      "title": "",
+      "children": []
+    }
+  ]
+}
