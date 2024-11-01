@@ -1,6 +1,6 @@
 # Advanced Task Generation
 
-<img src="gen_advc_tasks/assets/tasks_advc_framed.png" alt="tasks_advc_framed.png"/>
+<img src="assets/tasks_advc_framed.png" alt="tasks_advc_framed.png"/>
 
 Here we provide flexible and customizable scripts for generation of *advanced task* data described in the paper and depicted in the picture above. 
 
