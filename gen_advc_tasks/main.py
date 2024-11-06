@@ -19,10 +19,10 @@ if __name__ == '__main__':
     parser.add_argument(
         '--page-part',
         type=str,
-        # choices=['top', 'mid', 'btm', 'top,btm', 'top,mid', 'mid,btm', 'top,mid,btm'],
-        # required=True,
         default='top',
-        help='Specify which part(s), separated by comma (","),  of the webpages to use. E.g, `--page-part top,mid,btm`. The default is `top`.'
+        help='''Specify which part(s), separated by comma (","),  of the webpages to use. E.g, `--page-part top,mid,btm`. The default is `top`.
+        The annotation files with names not suffixed are regarded as "_top" here.
+        '''
     )
     parser.add_argument(
         '--cover-exist',
@@ -33,11 +33,12 @@ if __name__ == '__main__':
         '--max-id',
         type=int,
         default=1000000,
-        help='Specify the max indices of the annotated webpages to use.'
+        help='Specify the max index of the annotated webpages to use.'
     )
 
     args = parser.parse_args()
     task_type, webpage_dir, page_part_0, max_id, cover_exist = args.task_type, args.webpage_dir, args.page_part, args.max_id, args.cover_exist
+
     page_part: set = set(map(lambda x: x.strip(), page_part_0.split(',')))
     page_part.discard('')
     if not page_part.issubset({'top', 'mid', 'btm'}):

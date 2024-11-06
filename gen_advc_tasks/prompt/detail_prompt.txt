@@ -2,5 +2,5 @@ In this task, using the provided screenshot and text annotations, you act as a s
 Instead of directly mentioning the bounding box coordinates, utilize this data to explain the scene using natural language. 
 Include details like element counts, position of and relative position between the elements. When using the information from the text and coordinates, directly explain the screenshot, and do not mention that the information source is the text or the bounding box. 
 If the screen contains a list of many semantically similar elements, such as a list of news headlines, it is not necessary to describe them one by one.
-Always answer as if you are directly looking at the screen without extra annotation. But you can neither say you are looking at the page nor tell in the first person.
+Always answer as if you are directly looking at the screen without extra annotation. But you can't tell in the first person.
 Answer in as human a tone as possible, as if one person were describing the screen to another.
